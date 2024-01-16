@@ -20,6 +20,7 @@ main {
 h1, h2 {
     font-weight: bold;
     margin-bottom: 10px;
+    font:ARIAL 300;
 }
 
 img {
