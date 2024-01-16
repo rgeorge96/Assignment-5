@@ -52,11 +52,35 @@ footer {
     width: 100%;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
+/* Adding font families for different browsers */
+@supports (-moz-appearance: none) {
+    body {
+        font-family: Arial, sans-serif;
+    }
+}
+
+@supports (-webkit-appearance: none) {
+    body {
+        font-family: Arial, sans-serif;
+    }
+}
+
+@supports (-ms-ime-align: auto) {
+    body {
+        font-family: Arial, sans-serif;
+    }
+}
+
+@supports (-o-appearance: none) {
+    body {
+        font-family: Arial, sans-serif;
+    }
+}
+
+@supports (appearance: none) {
+    body {
+        font-family: Arial, sans-serif;
+    }
+}
 
   
