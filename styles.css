@@ -17,10 +17,18 @@ main {
     padding: 20px;
 }
 
-h1, h2 {
+h1 {
     font-weight: bold;
     margin-bottom: 10px;
-    font:ARIAL 300;
+    font-family: "Garamond", serif; /* Updated font-family */
+    color: #2c3e50; /* Updated color */
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Verdana", sans-serif; /* Updated font-family */
+    color: #c0392b; /* Updated color */
 }
 
 img {
@@ -52,36 +60,3 @@ footer {
     left: 0;
     width: 100%;
 }
-
-/* Adding font families for different browsers */
-@supports (-moz-appearance: none) {
-    body {
-        font-family: Arial, sans-serif;
-    }
-}
-
-@supports (-webkit-appearance: none) {
-    body {
-        font-family: Arial, sans-serif;
-    }
-}
-
-@supports (-ms-ime-align: auto) {
-    body {
-        font-family: Arial, sans-serif;
-    }
-}
-
-@supports (-o-appearance: none) {
-    body {
-        font-family: Arial, sans-serif;
-    }
-}
-
-@supports (appearance: none) {
-    body {
-        font-family: Arial, sans-serif;
-    }
-}
-
-  
