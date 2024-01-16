@@ -1,3 +1,4 @@
+```css
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -20,15 +21,27 @@ main {
 h1 {
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: "Garamond", serif; /* Updated font-family */
-    color: #2c3e50; /* Updated color */
+    font-family: "Garamond", serif;
+    color: #2c3e50;
 }
 
 h2 {
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: "Verdana", sans-serif; /* Updated font-family */
-    color: #c0392b; /* Updated color */
+    font-family: "Verdana", sans-serif;
+    color: #c0392b;
+}
+
+p {
+    line-height: 1.5;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
 }
 
 img {
@@ -60,3 +73,18 @@ footer {
     left: 0;
     width: 100%;
 }
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: grey;
+}
+```
+
