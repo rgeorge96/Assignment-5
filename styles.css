@@ -1,52 +1,51 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .site-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .image-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .img-fluid {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    overflow: hidden;
-  }
-  
-  .hyperlink {
-    text-decoration: none;
-    color: #337ab7;
-  }
-  
-  .hyperlink:hover {
-    text-decoration: underline;
-  }
-  
-  #scroll-top-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #337ab7;
-    color: white;
-    font-size: 16px;
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  #scroll-top-button:hover {
-    background-color: #4490d6;
-  }
-  
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+}
+
+.site-title {
+	text-align: center;
+	color: #333;
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.image-title {
+	text-align: center;
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.hyperlink {
+	color: blue;
+	text-decoration: none;
+}
+
+.hyperlink:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+#scroll-button {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  transform: perspective(1000px) rotateX(45deg);
+}
+
+#scroll-button:hover {
+  transform: perspective(1000px) rotateX(45deg) scale(1.05);
+}

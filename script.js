@@ -1,20 +1,29 @@
-// Scroll to top button
-const scrollTopButton = document.getElementById('scroll-top-button');
+// Select the button with the scroll-to-top functionality
+const scrollTopButton = document.getElementById("scroll-top-button");
 
+// Add an event listener to the button
+scrollTopButton.addEventListener("click", scrollToTop);
+
+// Define the scrollToTop function
 function scrollToTop() {
+	// Select the HTML body element
+	const body = document.body;
+
+	// Animate the scrolling to the top
+	body.style.transition = "all 0.5s ease-in-out";
+	body.style.transform = "translateY(0)";
+
+	// After the animation is finished, reset the transform property
+	setTimeout(function() {
+		body.style.transform = "";
+	}, 500);
+}
+
+// Get a reference to the button element
+const scrollButton = document.getElementById('scroll-button');
+
+// Add an event listener to the button
+scrollButton.addEventListener('click', function() {
+  // Scroll the page to the top
   window.scrollTo(0, 0);
-}
-
-scrollTopButton.addEventListener('click', scrollToTop);
-
-// Add active class to current nav item
-const navItems = document.querySelectorAll('.hyperlink');
-
-function handleNavItemClick(event) {
-  event.preventDefault();
-  const target = event.target.hash;
-  const navItem = document.querySelector(`a[href="${target}"]`);
-  navItem.classList.add('active');
-}
-
-navItems.forEach(item => item.addEventListener('click', handleNavItemClick));
+});
