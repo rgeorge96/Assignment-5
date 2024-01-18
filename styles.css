@@ -1,90 +1,52 @@
-```css
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .site-title {
     text-align: center;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-h1 {
+    font-size: 36px;
     font-weight: bold;
-    margin-bottom: 10px;
-    font-family: "Garamond", serif;
-    color: #2c3e50;
-}
-
-h2 {
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-family: "Verdana", sans-serif;
-    color: #c0392b;
-}
-
-p {
-    line-height: 1.5;
-}
-
-em {
-    font-style: italic;
-}
-
-strong {
-    font-weight: bold;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
     margin-bottom: 20px;
-}
-
-button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #444;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+  }
+  
+  .image-title {
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .img-fluid {
     width: 100%;
-}
-
-a {
-    color: red;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  
+  .hyperlink {
     text-decoration: none;
-}
-
-a:hover {
+    color: #337ab7;
+  }
+  
+  .hyperlink:hover {
     text-decoration: underline;
-}
-
-a:visited {
-    color: grey;
-}
-```
-
+  }
+  
+  #scroll-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #337ab7;
+    color: white;
+    font-size: 16px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #scroll-top-button:hover {
+    background-color: #4490d6;
+  }
+  
